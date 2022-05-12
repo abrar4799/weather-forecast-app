@@ -21,7 +21,7 @@ Weather Forecast App task for The Quantum Insider
 # Developer
 Abrar Abd El-Mohsen
 
-# Instucrions 
+# Instructions 
 - git clone https://github.com/abrar4799/weather-forecast-app.git
 - npm install 
 - npm start
