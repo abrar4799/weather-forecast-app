@@ -24,8 +24,8 @@ describe( 'components' , () => {
     render(<App />)
     
     //Assert
-    const welcomeElement = screen.getByText('--Select Country--' ,  { exact: false });
-    expect(welcomeElement).toBeInTheDocument();
+    const countryElement = screen.getByText('--Select Country--' ,  { exact: false });
+    expect(countryElement).toBeInTheDocument();
 
    });
    test( 'render "State" on home page ', () => { 
@@ -33,8 +33,8 @@ describe( 'components' , () => {
     render(<App />)
     
     //Assert
-    const welcomeElement = screen.getByText('--Select State--' ,  { exact: false });
-    expect(welcomeElement).toBeInTheDocument();
+    const stateElement = screen.getByText('--Select State--' ,  { exact: false });
+    expect(stateElement).toBeInTheDocument();
 
    });
 
@@ -43,19 +43,17 @@ describe( 'components' , () => {
     render(<App />)
     
     //Assert
-    const welcomeElement = screen.getByText('--Select City--' ,  { exact: false });
-    expect(welcomeElement).toBeInTheDocument();
+    const cityElement = screen.getByText('--Select City--' ,  { exact: false });
+    expect(cityElement).toBeInTheDocument();
 
    });
 
-   test( 'render "Get Button" on home page ' , () =>{
-    render(<App />)
-    const headerElement = screen.getByText('Get' , {exact: false})
-  });
+ 
 
   test( 'render "Header Component" on home page ' , () =>{
     render(<Header />)
     const headerElement = screen.getByText('Weather' , {exact: false})
+    expect(headerElement).toBeInTheDocument();
    });
 
   test('render weather if request succeds' , async () => {
